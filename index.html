@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
 
 <head>
@@ -7,16 +6,13 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Signin Template · Bootstrap</title>
-    <link rel="stylesheet" href="./css/toqueteos.css">
-    <script src="https://kit.fontawesome.com/f864ed8c8f.js" crossorigin="anonymous"></script>
-    <link rel="canonical" href="index.html">
+    <title>Home · Bootstrap</title>
+    <link rel="canonical" href="home.html">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
 
 
@@ -35,54 +31,121 @@
                 font-size: 3.5rem;
             }
         }
-
-        i {
-            font-size: 100px;
-        }
-
-        body {
-            background-image: url(./imagenes/web-visual-univers_1380888826203_ILUSIONA_UNIVERS.png);
+        .imagen{
+            background-image: url(./imagenes/unnamed.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
-
-        .logo {
-            height: 59%;
-            width: 59%;
-        }
     </style>
-
-    <link href="./css/signin.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="./css/micss.css">
 </head>
 
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ali">
+        <a class="navbar-brand m-2" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<body class="text-center">
-    
-    <form class=" cuadrado form-signin mx-auto  rounded " action="home.html">
-        <img class="logo" class="mx-auto" src="./imagenes/fondo-emblema-bolos_1284-13301.jpg">
-        <h1 class="h3 mb-3 font-weight-normal raton">Inicie sesion</h1>
-        <label for="inputEmail" class="sr-only">Correo Electronico</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Correo Electronico" required autofocus>
-        <label for="inputPassword" class="sr-only">Contraseña</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
-        <div class="checkbox mb-3">
-            <label>
-                <input class="mt-3" type="checkbox" value="remember-me"> Recuerdame
-            </label>
+        <div class="collapse navbar-collapse m-2" id="navbarsExampleDefault">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="album.html">Album</a>
+                </li>
+            </ul>
+            <div class="collapse navbar-collapse justify-content-end">
+                <a class="btn btn-outline-primary " href="home.html">Log in</a>
+            </div>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
-        <p class="mt-5 mb-3 text-white raton">&copy; RocketBowling 2019-2020</p>
-        <p class="mt-3 text-white"><a href="registro.html">No tengo cuenta</a></p>
-    </form>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-        crossorigin="anonymous"></script>
+    </nav>
+        
+    </div>
+
+    <main role="main" class="mt-2">
+
+        <div class="imagen jumbotron mt-5 pt-5 pb-5 pt-2">
+            <div class="container">
+                <h1 class="display-1">Rocket Bowlling</h1>
+                <p></p>
+                <p><a class="btn btn-primary btn-lg" href="blog.html" role="button">Mira nuestro blog »</a></p>
+            </div>
+        </div>
+
+        <div class="container mt-2">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Instalaciones</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                        magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-secondary" href="album.html" role="button">Nuestras instalaciones »</a></p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Precios</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                        magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-secondary" href="blog.html" role="button">Precios »</a></p>
+                </div>
+            </div>
+
+            <hr>
+
+        </div> 
+
+    </main>
+
+      
+    <footer class="container pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+            <div class="col-12 col-md">
+                <i class="fas fa-bowling-ball alt="" width=" 50" height="50"></i>
+                <small class="d-block mb-3 text-muted">© RocketBowling 2020</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Corporaciones</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Mercadona</a></li>
+                    <li><a class="text-muted" href="#">El Pepe</a></li>
+                    <li><a class="text-muted" href="#">Es Liceu</a></li>
+                    <li><a class="text-muted" href="#">Adidos</a></li>
+                    <li><a class="text-muted" href="#">Nikefueraparatanto</a></li>
+                    <li><a class="text-muted" href="#">Oscar Amigo</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Sitios De Interes</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Catedral De Palma</a></li>
+                    <li><a class="text-muted" href="#">Na Burguesa</a></li>
+                    <li><a class="text-muted" href="#">Castillo De Bellver</a></li>
+                    <li><a class="text-muted" href="#">La Almudaina</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Contacto</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#"><i class="fas fa-phone"></i>608329165</a></li>
+                    <li><a class="text-muted" href="#"><i class="far fa-envelope"></i>Email</a></li>
+                    <li><a class="text-muted" href="#"><i class="fas fa-home"></i>Av El Pepe Nº5, Palma</a></li>
+                    <li><a class="text-muted" href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+
 </body>
+<div></div>
+<app-content ng-version="10.1.5"></app-content>
 
 </html>
